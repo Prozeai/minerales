@@ -1,0 +1,37 @@
+[
+  {
+    "nombre": "Pizza Muzzarella",
+    "precio": 8500,
+    "categoria": "pizzas",
+    "descripcion": "Pizza clásica con salsa de tomate y mozzarella",
+    "imagen": "Images/Products/Pizza.jpg",
+    "disponible": false,
+    "extras": [
+      { "nombre": "Extra queso", "precio": 1200, "tipo": "check" },
+      { "nombre": "Aceitunas", "precio": 800, "tipo": "check" }
+    ]
+  },
+  {
+    "nombre": "Hamburguesa Completa",
+    "precio": 6500,
+    "categoria": "hamburguesas",
+    "descripcion": "Carne, lechuga, tomate y cheddar",
+    "imagen": "Images/Products/HamburguesaCompleta.png",
+    "disponible": true,
+    "extras": [
+      { "nombre": "Bacon", "precio": 1500, "tipo": "check" },
+      { "nombre": "Huevo", "precio": 900, "tipo": "check" },
+      { "nombre": "Empanada de carne", "precio": 1200, "tipo": "cantidad", "max": 12 },
+      { "nombre": "Empanada de jamón y queso", "precio": 1200, "tipo": "cantidad", "max": 12 }
+    ]
+  },
+  {
+    "nombre": "Promo Pizza + Gaseosa",
+    "precio": 12000,
+    "categoria": "promos",
+    "descripcion": "Una pizza muzzarella grande con gaseosa",
+    "imagen": "Images/Products/PizzaConGaseosa.png",
+    "disponible": true,
+    "extras": []
+  }
+]

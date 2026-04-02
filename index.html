@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  <title>Pedidos Online</title>
+
+  <link rel="icon" type="image/png" href="Images/CompanyLogo.png" id="favicon">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+</head>
+<body>
+
+  <div id="pantallaCarga" class="pantallaCarga">
+    <div class="pantallaCargaContenido">
+      <img src="Images/CompanyLogo.png" alt="Logo" class="pantallaCargaLogo" id="pantallaCargaLogo">
+      <p id="textoPantallaCarga">Cargando...</p>
+    </div>
+  </div>
+  
+  <header class="topbar">
+    <div class="logo">
+      <img src="Images/CompanyLogo.png" alt="Logo" class="logoImg" id="logoNegocio">
+      <h1 id="nombreNegocio"><span>Mi Restaurante</span></h1>
+    </div>
+
+    <div class="accionesHeader">
+      <button type="button" class="btnHorarios" id="btnHorarios" onclick="abrirHorarios()">
+        Horarios
+      </button>
+
+      <button type="button" class="btnBuscar" id="btnBuscar" onclick="abrirBuscador()">
+        <img src="Images/Search.png" alt="Buscar">
+      </button>
+
+      <button type="button" class="btnMaps" id="btnMaps" onclick="abrirUbicacion()">
+        <img src="Images/Maps.png" alt="Ubicación">
+      </button>
+
+      <button type="button" class="btnCarrito" onclick="toggleCarrito()">
+        <span id="contadorCarrito" class="contadorCarrito">0</span>
+        <img src="Images/Cart.png" alt="Carrito">
+      </button>
+    </div>
+  </header>
+
+  <div id="buscadorOverlay" class="buscadorOverlay">
+    <div class="buscadorOverlayHeader">
+      <button type="button" class="btnVolverBuscador" onclick="cerrarBuscador()">
+          <img src="Images/Back.png" alt="Volver">
+      </button>
+
+      <input
+        type="text"
+        id="inputBuscador"
+        class="inputBuscador"
+        placeholder="Buscar productos..."
+        autocomplete="off"
+      >
+    </div>
+
+    <div id="resultadosBuscador" class="resultadosBuscador"></div>
+  </div>
+
+  <main class="zonaCentral">
+  <div class="contenidoCentrado">
+
+    <section class="sliderProductos" id="sliderProductos">
+      <div class="sliderTrack" id="sliderTrack"></div>
+    </section>
+
+    <section class="categoriasAcordeon" id="categoriasAcordeon"></section>
+
+    <button
+      type="button"
+      id="btnPedidoFlotante"
+      class="btnPedidoFlotante"
+      onclick="finalizarPedido()"
+    >
+      Enviar pedido al WhatsApp · $0
+    </button>
+
+  </div>
+</main>
+
+  <aside class="carrito" id="carrito">
+    <h2 class="tituloCarrito">
+      <img src="Images/Cart.png" alt="Carrito">
+      Tu pedido
+    </h2>
+
+    <ul id="listaCarrito"></ul>
+
+    <p class="total">Total: <span id="total">$0</span></p>
+
+    <button type="button" class="btnPedido" onclick="finalizarPedido()">
+      Enviar pedido
+    </button>
+  </aside>
+
+  <div id="horariosModal" class="modal">
+    <div class="modal-content modalHorarios">
+      <h2>Horarios</h2>
+
+      <div class="listaHorarios" id="listaHorarios"></div>
+
+      <button type="button" onclick="cerrarHorarios()" class="cancelar">
+        Cerrar
+      </button>
+    </div>
+  </div>
+
+  <div id="modalProducto" class="modal">
+    <div class="modal-content">
+      <h2 id="modalNombre"></h2>
+
+      <img id="modalImagen" class="modal-img" alt="Producto">
+
+      <p id="modalDescripcion"></p>
+
+      <div id="bloqueExtras">
+        <h3>Extras</h3>
+        <div id="extrasContainer"></div>
+      </div>
+
+      <label for="cantidadProducto">Cantidad</label>
+      <input type="number" id="cantidadProducto" value="1" min="1">
+
+      <h3 id="precioModal">$0</h3>
+
+      <textarea
+        id="comentarioProducto"
+        maxlength="100"
+        placeholder="Ej: sin cebolla, sin tomate..."
+      ></textarea>
+
+      <button type="button" onclick="agregarDesdeModal()">
+        Agregar al carrito
+      </button>
+
+      <button type="button" onclick="cerrarModal()" class="cancelar">
+        Cancelar
+      </button>
+    </div>
+  </div>
+
+  <div id="checkoutModal" class="modal">
+    <div class="modal-content checkout">
+      <h2>Confirmar pedido</h2>
+
+      <div id="resumenPedido"></div>
+
+      <h3>Tipo de entrega</h3>
+      <select id="tipoEntrega" onchange="cambiarEntrega()"></select>
+
+      <h3>Datos del cliente</h3>
+      <input type="text" id="nombreCliente" placeholder="Nombre completo">
+      <input type="tel" id="telefonoCliente" placeholder="Teléfono">
+
+      <div id="direccionContainer">
+        <input type="text" id="direccionCliente" placeholder="Dirección exacta">
+      </div>
+
+      <h3>Forma de pago</h3>
+      <select id="formaPago" onchange="cambiarPago()"></select>
+
+      <div id="efectivoContainer">
+        <input type="number" id="pagaCon" placeholder="¿Con cuánto pagás?">
+      </div>
+
+      <h3>Comentarios del pedido</h3>
+      <textarea
+        id="comentariosPedido"
+        maxlength="200"
+        placeholder="Ej: entregar a las 22hs, tocar timbre, etc"
+      ></textarea>
+
+      <h2 id="totalFinal">$0</h2>
+
+      <button type="button" onclick="confirmarPedido()" class="btnPedido">
+        Confirmar pedido
+      </button>
+
+      <button type="button" onclick="cerrarCheckout()" class="cancelar">
+        Cancelar
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <h3 id="tituloRedes">Seguinos</h3>
+
+      <div class="redes" id="redesContainer"></div>
+
+      <p class="copy" id="footerCopy">© 2026 Pedidos Online</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

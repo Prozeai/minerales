@@ -1,0 +1,328 @@
+{
+  "tituloPagina": "BurgaBox",
+  "nombreNegocio": "BurgaBox",
+  "telefono": "5491164227343",
+  "ubicacionLink": "https://www.google.com/maps/place/TU_UBICACION",
+  "moneda": "$",
+  "logo": "Images/CompanyLogo.png",
+  "favicon": "Images/CompanyLogo.png",
+  "footerTexto": "© 2026 BurgaBox",
+  "tituloRedes": "Seguinos en las redes ...",
+
+  "tema": {
+    "pantallaCarga": {
+      "colorFondo": "#121212",
+      "colorTexto": "#FFC300"
+    },
+
+    "logos": {
+      "headerAncho": "150px",
+      "headerAlto": "150px",
+      "logoOffsetX": "-40px",
+      "tituloOffsetX": "70px",
+
+      "pantallaCargaAncho": "410px",
+      "pantallaCargaAlto": "410px",
+
+      "mobileHeaderAncho": "128px",
+      "mobileHeaderAlto": "128px",
+      "logoOffsetXMobile": "-45px",
+      "tituloOffsetXMobile": "50px",
+      "tituloSizeMobile": "16px",
+
+      "pantallaAltaCargaAncho": "625px",
+      "pantallaAltaCargaAlto": "625px",
+
+      "desktopGrandeCargaAncho": "625px",
+      "desktopGrandeCargaAlto": "625px",
+
+      "ocultarTextoPantallaCarga": true
+    },
+
+    "general": {
+      "colorTextoPrincipal": "#ffffff",
+      "colorTextoSecundario": "#c7c7c7",
+      "colorTextoClaro": "#ffffff",
+      "colorTextoModal": "#d6d6d6",
+      "colorPrecio": "#ff8a3d",
+
+      "colorFondoPagina": "#121212",
+      "colorFondoContenedor": "#1b1b1b",
+      "colorFondoSecciones": "#181818",
+      "colorFondoSuave": "#242424",
+      "colorFondoSuaveHover": "#2f2f2f",
+
+      "colorOverlayModal": "rgba(0,0,0,0.75)"
+    },
+
+    "header": {
+      "colorFondo": "#363636",
+      "colorTextoTitulo": "#FFC300",
+      "sombra": "0 2px 12px rgba(0,0,0,0.45)"
+    },
+
+    "botonesHeader": {
+      "colorFondoHorarios": "#252525",
+      "colorTextoHorarios": "#ffffff",
+      "colorBordeHorarios": "#ffffff",
+      "grosorBordeHorarios": "1px",
+
+      "colorFondoBuscar": "#5E5E5E",
+      "colorTextoBuscar": "#333333",
+      "colorBordeBuscar": "#ffffff",
+      "grosorBordeBuscar": "1px",
+
+      "colorFondoMaps": "#5E5E5E",
+      "colorTextoMaps": "#ffffff",
+      "colorBordeMaps": "#ffffff",
+      "grosorBordeMaps": "1px",
+
+      "colorFondoCarrito": "#5E5E5E",
+      "colorTextoCarrito": "#ffffff",
+      "colorBordeCarrito": "#ffffff",
+      "grosorBordeCarrito": "1px"
+    },
+
+    "buscador": {
+      "colorOverlay": "#000000",
+
+      "colorInputFondo": "#ffffff",
+      "colorInputTexto": "#333333",
+      "colorInputBorde": "#d0d0d0",
+      "grosorBordeInput": "1px",
+
+      "colorBotonVolverFondo": "#f3f3f3",
+      "colorBotonVolverTexto": "#333333",
+      "colorBotonVolverBorde": "#d0d0d0",
+      "grosorBordeBotonVolver": "1px",
+
+      "colorItemFondo": "#ffffff",
+      "colorItemFondoHover": "#f7f7f7",
+      "colorItemBorde": "#e5e5e5",
+      "grosorBordeItem": "1px",
+      "colorItemTexto": "#ffffff",
+      "colorItemDescripcion": "#c7c7c7",
+      "colorItemPrecio": "#ff4d4d",
+
+      "colorTextoVacio": "#666666"
+    },
+
+    "estadoNegocio": {
+      "colorFondoAbierto": "#1f8f4d",
+      "colorTextoAbierto": "#ffffff",
+      "colorFondoCerrado": "#b22222",
+      "colorTextoCerrado": "#ffffff"
+    },
+
+    "slider": {
+      "colorFondo": "#181818",
+      "colorBordeInferior": "#2e2e2e",
+      "grosorBordeInferior": "1.5px",
+      "colorBordeImagen": "#ffffff",
+      "grosorBordeImagen": "2px",
+      "sombraImagen": "0 6px 18px rgba(0,0,0,0.35)"
+    },
+
+    "categorias": {
+      "colorFondoSeccion": "#181818",
+      "colorBordeInferior": "#2e2e2e",
+      "grosorBordeInferior": "1.5px",
+
+      "colorFondoBoton": "#2a2a2a",
+      "colorFondoBotonHover": "#3a3a3a",
+      "colorTextoBoton": "#ffffff",
+      "colorBordeBoton": "#ffffff",
+      "grosorBordeBoton": "1.5px"
+    },
+
+    "productos": {
+      "colorFondoCard": "#1f1f1f",
+      "colorTextoNombre": "#ffffff",
+      "colorTextoDescripcion": "#c7c7c7",
+      "colorPrecio": "#EB2500",
+      "colorBordeCard": "#343434",
+      "grosorBordeCard": "1.5px",
+      "colorBordeCardActivo": "#ffffff",
+      "grosorBordeCardActivo": "1.5px",
+      "sombraCard": "0 10px 25px rgba(0,0,0,0.25)",
+
+      "colorEstadoDisponible": "#39b54a",
+      "colorEstadoAgotado": "#ff4d4d",
+      "mostrarDescripcionPreview": false
+    },
+
+    "carrito": {
+      "colorFondo": "#1b1b1b",
+      "colorTexto": "#ffffff",
+      "colorBorde": "#FFFFFF",
+      "grosorBorde": "1.5px",
+      "colorSeparadorItems": "#2e2e2e",
+      "grosorSeparadorItems": "1.5px",
+      "sombra": "0 10px 25px rgba(0,0,0,0.35)"
+    },
+
+    "botones": {
+      "colorFondoPrincipal": "#25d366",
+      "colorTextoPrincipal": "#ffffff",
+      "colorBordePrincipal": "#ffffff",
+      "grosorBordePrincipal": "1.5px",
+
+      "colorFondoSecundario": "#ff5a1f",
+      "colorTextoSecundario": "#ffffff",
+      "colorBordeSecundario": "#ffffff",
+      "grosorBordeSecundario": "1.5px",
+
+      "colorFondoCancelar": "#4a4a4a",
+      "colorTextoCancelar": "#ffffff",
+      "colorBordeCancelar": "#ffffff",
+      "grosorBordeCancelar": "1.5px",
+
+      "colorFondoEliminar": "#c62828",
+      "colorTextoEliminar": "#ffffff",
+      "colorBordeEliminar": "#ffffff",
+      "grosorBordeEliminar": "1.5px"
+  },
+
+    "modal": {
+      "colorFondo": "#1c1c1c",
+      "colorTextoTitulo": "#ffffff",
+      "colorTextoContenido": "#d6d6d6",
+      "colorBordeHorarios": "#ffffff",
+      "grosorBordeHorarios": "1px",
+      "sombra": "0 10px 25px rgba(0,0,0,0.45)"
+    },
+
+    "extras": {
+      "colorFondoItem": "#252525",
+      "colorFondoItemHover": "#313131",
+      "colorTexto": "#ffffff"
+    },
+
+    "formularios": {
+      "colorFondoInput": "#222222",
+      "colorTextoInput": "#ffffff",
+      "colorBordeInput": "#3b3b3b",
+      "grosorBordeInput": "1.5px",
+
+      "colorFondoTextarea": "#222222",
+      "colorTextoTextarea": "#ffffff",
+      "colorBordeTextarea": "#3b3b3b",
+      "grosorBordeTextarea": "1.5px",
+
+      "colorFondoSelect": "#222222",
+      "colorTextoSelect": "#ffffff",
+      "colorBordeSelect": "#3b3b3b",
+      "grosorBordeSelect": "1.5px",
+
+      "colorFondoResumen": "#242424",
+      "colorTextoResumen": "#ffffff"
+    },
+
+    "footer": {
+      "colorFondo": "#0d0d0d",
+      "colorTextoTitulo": "#ffffff",
+      "colorTextoCopy": "#cfcfcf"
+    },
+
+    "botonFlotante": {
+      "colorFondo": "#25d366",
+      "colorTexto": "#ffffff",
+      "colorBorde": "#FFFFFF",
+      "grosorBorde": "1.5px",
+      "sombra": "0 8px 20px rgba(0,0,0,0.35)"
+    },
+
+    "bordes": {
+      "radioBotones": "8px",
+      "radioBotonFlotante": "12px",
+      "radioCards": "14px",
+      "radioImagenes": "16px",
+      "radioInputs": "8px",
+      "radioModal": "14px",
+      "radioItemsExtras": "6px",
+      "radioCategorias": "20px",
+      "radioCarrito": "14px"
+    }
+  },
+
+  "sliderImagenes": [
+    {
+      "imagen": "Images/Products/Pizza.jpg",
+      "producto": "Pizza Muzzarella"
+    },
+    {
+      "imagen": "Images/Products/HamburguesaCompleta.png",
+      "producto": "Hamburguesa Completa"
+    },
+    {
+      "imagen": "Images/Products/PizzaConGaseosa.png",
+      "producto": "Promo Pizza + Gaseosa"
+    }
+  ],
+
+  "horarios": [
+    {
+      "dia": "Lunes",
+      "rangos": ["13:00-16:00", "20:00-02:00"]
+    },
+    {
+      "dia": "Martes",
+      "rangos": ["13:00-16:00", "18:00-02:00"]
+    },
+    {
+      "dia": "Miércoles",
+      "rangos": ["13:00-16:00", "20:00-05:00"]
+    },
+    {
+      "dia": "Jueves",
+      "rangos": ["13:00-16:00", "20:00-02:00"]
+    },
+    {
+      "dia": "Viernes",
+      "rangos": ["13:00-16:00", "20:00-03:00"]
+    },
+    {
+      "dia": "Sábado",
+      "rangos": ["08:30-20:00", "20:00-07:00"]
+    },
+    {
+      "dia": "Domingo",
+      "rangos": ["20:00-23:30"]
+    }
+  ],
+
+  "categorias": [
+    { "id": "todos", "nombre": "Todo" },
+    { "id": "pizzas", "nombre": "Pizzas" },
+    { "id": "hamburguesas", "nombre": "Hamburguesas" },
+    { "id": "promos", "nombre": "Promos" }
+  ],
+
+  "opcionesEntrega": [
+    { "nombre": "Retiro en local", "requiereDireccion": false },
+    { "nombre": "Envío gratis", "requiereDireccion": true }
+  ],
+
+  "opcionesPago": [
+    { "nombre": "Efectivo", "requierePagaCon": true },
+    { "nombre": "Transferencia", "requierePagaCon": false }
+  ],
+
+  "redes": [
+    {
+      "nombre": "Instagram",
+      "link": "https://instagram.com/",
+      "icono": "Images/SocialMedia/Instagram.png"
+    },
+    {
+      "nombre": "Facebook",
+      "link": "https://facebook.com/",
+      "icono": "Images/SocialMedia/Facebook.png"
+    },
+    {
+      "nombre": "TikTok",
+      "link": "https://tiktok.com/",
+      "icono": "Images/SocialMedia/Tiktok.png"
+    }
+  ]
+}
